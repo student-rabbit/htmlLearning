@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>꽃과 나무 소개</title>
+  <style>
+/* 고정 */
+body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #c0e0f6;
+      color: #00695c;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    header {
+      width: 100%;
+      padding: 1em 0;
+      top: 0;
+      left: 0;
+      height: 130px;
+      background-color: #98b8e1;
+      color: #004d40;
+      text-align: center;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #bfc48f;
+      top: 150px;
+      width: 100%;
+      padding: 1px 0;
+    }
+    nav a {
+      color: white;
+      padding: 15px 20px;
+      text-decoration: none;
+      text-align: center;
+    }
+    nav a:hover {
+      background-color: #b9d889;
+    }
+
+    section {
+      padding: 2em 2em 2em;
+      margin: 30px 120px;
+      background-color: #fff;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2em 0;
+      background-color: #faf297;
+      color: #004d40;
+    }
+
+    h2 {
+      text-align: center;
+      color: #004d40;
+    }
+
+    .container {
+      margin-top: 3pt;
+      padding-top: 30pt;
+      border-top: 2px solid #004d40; 
+    }
+
+    /* flower.html css 코드 */
+    .flower-container {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+    }
+
+    .flower-item {
+      width: 40%;
+    }
+
+    .flower-item img {
+      width: 100%;
+      height: 90%;
+      border-radius: 8px;
+    }
+
+    .flower-name {
+      margin-top: 10px;
+      font-weight: bold;
+      color: #004d40;
+      text-align: center;
+    }
+
+    .season-container {
+      margin-top: 29pt;
+      padding-top: 30pt;
+      border-top: 2px solid #004d40; 
+    }
+
+    .festival-container {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 3em;
+      padding: 20px;
+      border: 1px solid #b9d889;
+      border-radius: 8px;
+      background-color: #fdf5a1; 
+    }
+
+    .festival-container img {
+      width: 45%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    .festival-description {
+      width: 50%;
+      padding-left: 20px;
+      color: #004d40;
+    }
+
+    .festival-description h3 {
+      font-size: 1.2em;
+      margin-bottom: 1em;
+    }
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1 id="0">계절별 꽃과 나무 소개합니다!</h1>
+  </header>
+
+  <nav>
+    <a href="routes.html">산책 코스</a>
+    <a href="index.html">홈</a>
+    <a href="flowers.html">꽃과 나무 소개</a>
+  </nav>
+
+  <section>
+    <ol>
+      <li><a style="text-decoration: none; color: #004d40;" href="#1"><b>봄</b>에 피는 꽃과 나무</a></li>
+      <li><a style="text-decoration: none; color: #004d40;" href="#2"><b>여름</b>에 피는 꽃과 나무</a></li>
+      <li><a style="text-decoration: none; color: #004d40;" href="#3"><b>가을</b>에 피는 꽃과 나무</a></li>
+      <li><a style="text-decoration: none; color: #004d40;" href="#4"><b>겨울</b>에 피는 꽃과 나무</a></li>
+    </ol>
+    <div id="1" class="season-container">
+      <a style="text-decoration: none; color: #004d40;" href="#0"><h2 >봄에 피는 꽃과 나무</h2></a>
+<br>
+      <div class="flower-container">
+        <div class="flower-item">
+          <img src="img/flower1.jpg" alt="벚꽃">
+          <div class="flower-name">벚꽃</div>
+        </div>
+        <div class="flower-item">
+          <img src="img/flower2.jpg" alt="튤립">
+          <div class="flower-name">튤립</div>
+        </div>
+      </div>
+<br>
+      <div class="festival-container">
+        <img src="img/festival1.jpg" alt="봄 축제">
+        <div class="festival-description">
+          <h3>봄꽃 축제</h3>
+          <p>봄꽃이 만개하는 계절, 전국 곳곳에서 봄꽃 축제가 열립니다. 벚꽃, 튤립, 목련 등 다양한 봄꽃을 감상하며 즐길 수 있는 축제입니다.</p>
+          <p><a style="color: #254a44;" href="https://www.ccdailynews.com/news/articleView.html?idxno=2330878" target="_blank">자세히 보기</a></p>
+        </div>
+      </div>
+    </div>
+
+    <div id="2" class="season-container">
+      <a style="text-decoration: none; color: #004d40;" href="#0"><h2>여름에 피는 꽃과 나무</h2></a>
+<br>
+      <div class="flower-container">
+        <div class="flower-item">
+          <img src="img/flower4.jpg" alt="해바라기">
+          <div class="flower-name">해바라기</div>
+        </div>
+        <div class="flower-item">
+          <img src="img/flower3.jpg" alt="라벤더">
+          <div class="flower-name">라벤더</div>
+        </div>
+      </div>
+      <br>
+      <!-- 여름축제 -->
+      <div class="festival-container">
+        <img src="img/festival2.jpg" alt="여름 축제">
+        <div class="festival-description">
+          <h3>여름 물놀이 축제</h3>
+          <p>더운 여름에 물놀이와 시원한 음악 축제가 함께하는 여름 축제입니다. 가족과 함께 즐길 수 있는 다양한 활동들이 준비되어 있습니다.</p>
+          <p><a style="color: #254a44;" href="#" target="_blank">상품준비중</a></p>
+        </div>
+      </div>
+    </div>
+
+    <div id="3" class="season-container">
+      <a style="text-decoration: none; color: #004d40;" href="#0"><h2>가을에 피는 꽃과 나무</h2></a>
+      <br>
+      <div class="flower-container">
+        <div class="flower-item">
+          <img src="img/flower6.jpg" alt="국화">
+          <div class="flower-name">국화</div>
+        </div>
+        <div class="flower-item">
+          <img src="img/flower5.jpg" alt="코스모스">
+          <div class="flower-name">코스모스</div>
+        </div>
+      </div>
+
+      <br>
+      <!-- 가을축제 -->
+      <div class="festival-container">
+        <img src="img/festival3.jpg" alt="가을 축제">
+        <div class="festival-description">
+          <h3>가을 단풍 축제</h3>
+          <p>가을에는 아름다운 단풍과 함께 다양한 문화 행사와 맛있는 음식들이 어우러지는 가을 축제가 열립니다.</p>
+          <p><a style="color: #254a44;" href="#" target="_blank">상품준비중</a></p>
+        </div>
+      </div>
+    </div>
+
+    <div id="4" class="season-container">
+      <a style="text-decoration: none; color: #004d40;" href="#0"><h2>겨울에 피는 꽃과 나무</h2></a>
+      <br>
+      <div class="flower-container">
+        <div class="flower-item">
+          <img src="img/flower7.jpg" alt="동백꽃">
+          <div class="flower-name">동백꽃</div>
+        </div>
+        <div class="flower-item">
+          <img src="img/flower8.jpg" alt="호랑가시나무">
+          <div class="flower-name">호랑가시나무</div>
+        </div>
+      </div>
+
+      <br>
+      <!-- 겨울축제 -->
+      <div class="festival-container">
+        <img src="img/festival4.jpg" alt="겨울 축제">
+        <div class="festival-description">
+          <h3>겨울 빛 축제</h3>
+          <p>겨울밤을 환하게 밝히는 화려한 조명과 함께하는 겨울 축제. 따뜻한 겨울 음식과 함께 즐길 수 있는 최고의 겨울 행사입니다.</p>
+          <p><a style="color: #254a44;" href="#" target="_blank">상품준비중</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 산책의 세계</p>
+  </footer>
+</body>
+</html>

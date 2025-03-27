@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>산책 코스</title>
+  <style>
+
+/* 고정 */
+body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #c0e0f6;
+      color: #00695c;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    header {
+      width: 100%;
+      padding: 1em 0;
+      top: 0;
+      left: 0;
+      height: 130px;
+      background-color: #98b8e1;
+      color: #004d40;
+      text-align: center;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #bfc48f;
+      top: 150px;
+      width: 100%;
+      padding: 1px 0;
+    }
+    nav a {
+      color: white;
+      padding: 15px 20px;
+      text-decoration: none;
+      text-align: center;
+    }
+    nav a:hover {
+      background-color: #b9d889;
+    }
+
+    section {
+      padding: 2em 2em 2em;
+      margin: 30px 120px;
+      background-color: #fff;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2em 0;
+      background-color: #faf297;
+      color: #004d40;
+    }
+
+    h2 {
+      text-align: center;
+      color: #004d40;
+    }
+
+    .container {
+      margin-top: 3pt;
+      padding-top: 30pt;
+      border-top: 2px solid #004d40; 
+    }
+    
+    /* routs.html css 코드 */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 2em;
+    }
+    table, th, td {
+      border: 1px solid #ccc;
+    }
+    th, td {
+      padding: 15px;
+      text-align: center;
+    }
+    th {
+      background-color: #b9d889;
+      color: white;
+    }
+    td img {
+      width: 100%;
+      height: auto;
+      max-width: 300px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+    .route-details {
+      text-align: left;
+    }
+</style>
+
+</head>
+<body>
+  <header>
+    <h1>추천 산책 코스</h1>
+  </header>
+
+  <nav>
+    <a href="routes.html">산책 코스</a>
+    <a href="index.html">홈</a>
+    <a href="flowers.html">꽃과 나무 소개</a>
+  </nav>
+
+  <section>
+    <h2>서울에서 즐길 수 있는 추천 산책 코스</h2>
+
+    <!-- 산책 코스 표 -->
+    <table>
+      <thead>
+        <tr>
+          <th>사진</th>
+          <th>산책 코스</th>
+          <th>소요 시간</th>
+          <th>배화여대에서 가는 경로</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><img src="img/view1.jpg" alt="한강 공원"></td>
+          <td>한강 공원</td>
+          <td>1시간</td>
+          <td class="route-details">배화여대에서 버스를 타고 '한강공원역' 하차 후 도보 10분</td>
+        </tr>
+        <tr>
+          <td><img src="img/view2.jpg" alt="서울숲"></td>
+          <td>서울숲</td>
+          <td>1시간 30분</td>
+          <td class="route-details">배화여대에서 지하철 2호선 환승 후 서울숲역 하차</td>
+        </tr>
+        <tr>
+          <td><img src="img/view3.jpg" alt="경복궁 돌담길길"></td>
+          <td>경복궁 돌담길</td>
+          <td>1시간</td>
+          <td class="route-details">배화여대에서 버스 또는 지하철 3호선 이용 후 경복궁역 하차</td>
+        </tr>
+        <tr>
+          <td><img src="img/view4.jpg" alt="남산 둘레길"></td>
+          <td>남산 둘레길</td>
+          <td>1시간</td>
+          <td class="route-details">배화여대에서 지하철 4호선으로 '명동'역에서 하차 후 도보</td>
+        </tr>
+        <tr>
+          <td><img src="img/view7.jpg" alt="북촌한옥마을"></td>
+          <td>북촌 한옥마을</td>
+          <td>1시간 30분</td>
+          <td class="route-details">배화여대에서 지하철 3호선으로 '안국'역 하차 후 도보</td>
+        </tr>
+        <tr>
+          <td><img src="img/view6.jpg" alt="청계천"></td>
+          <td>청계천</td>
+          <td>1시간</td>
+          <td class="route-details">배화여대에서 지하철 1호선으로 '종로3가'역 하차 후 도보</td>
+        </tr>
+      </tbody>
+    </table>
+
+  </section>
+
+  <footer>
+    <p>© 2025 산책의 세계</p>
+  </footer>
+</body>
+</html>

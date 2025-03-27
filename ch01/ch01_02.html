@@ -1,0 +1,120 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IU concert</title>
+    <style>
+        body {
+            background-color: black;
+            color: aliceblue; 
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+
+        /* 중앙 정렬을 위한 flexbox 설정 */
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh; /* 화면 전체 높이를 차지 */
+            text-align: center;
+            padding: 20px;
+        }
+
+        .image {
+            display: flex;
+            justify-content: center;  /* 이미지를 가로로 중앙 정렬 */
+            align-items: center;      /* 이미지를 세로로 중앙 정렬 */
+            width: 100%;
+            max-width: 500px;  /* 이미지 최대 너비 */
+            margin: 20px 0;
+        }
+
+        img {
+            border-radius: 20pt;
+            border: 5pt dashed rgb(178, 155, 199);
+            max-width: 100%;  /* 화면 크기에 맞게 이미지 크기 조정 */
+            height: auto;     /* 이미지 비율 유지 */
+        }
+
+        .ex {
+            margin-top: -10pt;
+            padding: 0pt;
+        }
+
+        .face {
+            width: 100pt;
+            height: auto;
+            padding: -30pt;
+            margin: 30pt;
+        }
+
+        /* 텍스트 스타일링 */
+        .title {
+            font-size: 15pt;
+            font-style: italic;
+            letter-spacing: 5pt;
+        }
+
+        .small {
+            margin-top: 15pt;
+            font-size: 9pt;
+            color: rgb(228, 228, 228);
+        }
+
+        .box1 {
+            text-align: left;
+            font-size: 9pt;
+            border-top: 3pt solid rgb(178, 155, 199);
+            border-bottom: 3pt solid rgb(178, 155, 199);
+            line-height: 15pt;
+            padding: 5pt;
+        }
+
+        .story {
+            letter-spacing: 2pt;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>2024 IU HEREH WORLD TOUR CONCERT ENCORE : <br>THE WINNING</h1>
+        <p><i>2025.01.24</i> <b>CGV 단독개봉</b></p>
+
+        <div class="image">
+            <a href="https://moviestory.cgv.co.kr/fanpage/mainView;jsessionid=AF1D596718CC4D14BC91E4EE586F6907.STORY_node?movieIdx=89400">
+                <img src="img/concert.png" alt="아이유 콘서트 포스터">
+            </a>
+            <p>
+                <a href="https://youtu.be/MRHmCSuqXpM?si=7AG4yPEGnSvE27bt">
+                    <img class="face" src="img\iuimage.jpg" alt="아이유 콘서트 포스터">
+                </a>
+            </p>
+        </div>
+
+        <div class="ex">
+            <p class="small">*사진 클릭 시 사이트로 이동합니다.*</p>
+        </div>
+        
+        <div>
+            <p class="box1">2024년 9월에 개최된 <b>2024 IU HEREH WORLD TOUR CONCERT ENCORE : THE WINNING</b><br> 아이유의 첫 월드 투어의 앵콜 콘서트의 실황을 담은 다큐멘터리 영화다.</p>
+
+            <p class="title">
+                최초의 아이콘 <b>아이유</b>,<br>
+                <b>100번째 콘서트</b>로 완성된 찬란한 기록.<br>
+            </p>
+            <p class="story">
+                'Love wins all', '홀씨', 'Shopper', 'Celebrity', 'Last Fantasy' 등<br>
+                수많은 명곡으로 서울월드컵경기장을 가득 채운<br>
+                아이유와 유애나의 뜨거운 에너지와 함성.<br>
+                상암 하늘을 수놓은 환상적인 드론쇼까지!
+            </p>
+            <p class="title">
+                승리를 위해 달려온 여정의 마지막 챕터가 지금 스크린에서 펼쳐진다!
+            </p>
+        </div>
+    </div>
+</body>
+</html>

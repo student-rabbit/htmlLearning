@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ch02 연습_시멘틱 태그 이용하기</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        #wrap {
+            width: 1200px;
+            /* 위아래는 0, 가운데로 오게 auto */
+            margin: 0 auto;
+        }
+        #header {
+            width: 100%;
+            height: 100px;
+            background-color: aquamarine;
+            display: flex;
+        }
+        #header .logo{
+            width: 20%;
+            height: 100px;
+            background-color: rgb(182, 127, 255);
+            display: flex;
+        }
+        #header .nav{
+            width: 40%;
+            height: 100px;
+            background-color: rgb(136, 127, 255);
+            display: flex;
+        }        
+        #header .nav1{
+            width: 40%;
+            height: 100px;
+            background-color: rgb(162, 255, 209);
+            display: flex;
+        }        
+        #slider {
+            width: 100%;
+            height:300px;
+            background-color: rgb(129, 129, 173);
+            display: flex;
+        }
+        #slider .slider2{
+            width: 30%;
+            height:300px;
+            background-color: rgb(128, 194, 161);
+        }
+        #content {
+            width: 100%;
+            height: 200px;
+            background-color: blueviolet;
+            display: flex;
+        }
+        #content .content1 {
+            width: 100%;
+            height: 200px;
+            background-color: rgb(100, 118, 158);
+        }
+        #content .content2{
+            width: 40%;
+            height: 200px;
+            background-color: rgb(137, 180, 126);
+        }
+        #content .content3{
+            width: 40%;
+            height: 200px;
+            background-color: rgb(202, 138, 202);
+        }
+        #footer {
+            width: 100%;
+            height: 100px;
+            background-color: rgb(129, 48, 48);
+            display: flex;
+        }
+        #footer .footer1{
+            width: 20%;
+            height: 100px;
+            background-color: rgb(91, 142, 146);
+        }
+        #footer .footer2{
+            width: 50%;
+            height: 100px;
+            background-color: rgb(104, 93, 143);
+        }
+        #footer .footer3{
+            width: 30%;
+            height: 100px;
+            background-color: rgb(88, 133, 95);
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <!-- header -->
+        <div id="header">
+            <div class="logo"></div>
+            <div class="nav"></div>
+            <div class="nav1"></div>
+        </div>
+        <!-- silder -->
+        <div id="slider">
+            <div class="slider2"></div>
+        </div>
+        <!-- content -->
+        <div id="content">
+            <div class="content1"></div>
+            <div class="content2"></div>
+            <div class="content3"></div>
+        </div>
+        <!-- footer -->
+        <div id="footer">
+            <div class="footer1"></div>
+            <div class="footer2"></div>
+            <div class="footer3"></div>
+        </div>
+    </div>
+</body>
+</html>
