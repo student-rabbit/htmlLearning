@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ch03_지정된 시멘틱 태그</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        ul {
+            list-style: none;
+            display: flex;
+
+        }
+        .wrap {
+            margin: 0 auto;
+            width: 1200px;
+            height: 100px;
+        }
+        header{
+            width: 100%;
+            display: flex;
+        }
+        header .logo {
+            width: 20%;
+            height: 100px;
+            padding: 20px 30px;
+        }
+        header a {
+            text-decoration: none;
+            color: #000000;
+            display: block;
+        }
+        header nav {
+            width: 80%;
+            height: 100px;
+        }
+        header nav>ul {
+            display: flex;
+            justify-content: right;
+            align-items: center;
+            height: 100%;
+        }
+        header nav>ul>li>a {
+            color: #fff;
+            font-size: 16pt;
+            padding: 12px 45px;
+            background-color: blueviolet;
+        }
+        header nav>ul>li>a:hover {
+            background-color: rgb(229, 160, 220);
+        }
+        .slider {
+            width: 100%;
+            height: 400px;
+            background-color: rgb(249, 255, 196);
+        }
+        .contents {
+            width: 100%;
+            display: flex;
+        }
+        .content1 {
+            width: 400px;
+            height: 300px;
+            background-color: rgb(196, 255, 196)
+        }
+        .content2 {
+            width: 400px;
+            height: 300px;
+            background-color: rgb(196, 251, 255)
+        }
+        .content3 {
+            width: 400px;
+            height: 300px;
+            background-color: rgb(196, 220, 255)
+        }
+        footer {
+            width: 100%;
+            display: flex;
+        }
+        .footer1 {
+            width: 20%;
+            height: 100px;
+            background-color: rgb(236, 196, 255);
+        }
+        .footer2 {
+            width: 60%;
+            height: 100px;
+            background-color: rgb(255, 196, 196);
+        }
+        .footer3 {
+            width: 20%;
+            height: 100px;
+            background-color: rgb(255, 196, 255);
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <header>
+            <h1 class="logo"><a href="#">HTML5</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="#">menu</a></li>
+                    <li><a href="#">menu</a></li>
+                    <li><a href="#">menu</a></li>
+                    <li><a href="#">menu</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="slider"></div>
+        <div class="contents">
+            <article class="content1"></article>
+            <article class="content2"></article>
+            <article class="content3"></article>
+        </div>
+        <footer>
+            <div class="footer1"></div>
+            <div class="footer2"></div>
+            <div class="footer3"></div>
+        </footer>
+    </div>
+</body>
+</html>

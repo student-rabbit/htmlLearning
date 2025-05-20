@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ch03_지정된 시멘틱 태그</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            /* 형태가 무너지지 않게 한다. */
+            box-sizing: border-box;
+        }
+        ul {
+            list-style: none;
+            display: flex;
+
+        }
+        /* 맨 위부터 중간에 */
+        .wrap {
+            margin: 0 auto;
+            width: 1200px;
+            height: 100px;
+        }
+
+        /* header 디자인 */
+        header{
+            width: 100%;
+            display: flex;
+        }
+        header .logo {
+            width: 20%;
+            height: 100px;
+            font-size: 30pt;
+            padding: 20px 30px;
+        }
+        header a {
+            text-decoration: none;
+            color: #000000;
+            display: block;  /* 중요 */
+        }
+        header nav {
+            width: 80%;
+            height: 100px;
+        }
+        header nav>ul {
+            display: flex;
+            /* <<중요>> justify-center을 이용 */
+            justify-content: right;
+            align-items: center;
+            height: 100%;
+        }
+        header nav>ul>li>a {
+            color: #fff;
+            font-size: 16pt;
+            padding: 12px 45px;
+            background-color: blueviolet;
+        }
+        /* 메뉴에 마우스를 올릴 때 */
+        header nav>ul>li>a:hover {
+            background-color: rgb(229, 160, 220);
+        }
+        
+        /* slider 디자인 */
+        .slider {
+            width: 100%;
+            height: 400px;
+            background-color: rgb(249, 255, 196);
+            /* 넘치는 부분은 가려줘라 */
+            overflow: hidden;
+            /* .text는 absolute를 주었기에 부모 위치에서 relative(기준점)를 주어야 한다. */
+            position: relative;
+        }
+        .slider img {
+            width: 1200px;
+        }
+        .slider .text {
+            left: 50%;
+            top: 50%;
+            position: absolute;
+            color: #fff;
+            font-size: 20pt;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.6);
+            transform: translate(-50%, -50%);
+        }
+
+        /* content 디자인 */
+        .contents {
+            width: 100%;
+            display: flex;
+        }
+        .content1 {
+            width: 400px;
+            height: 300px;
+            background-color: rgb(196, 255, 196)
+        }
+        .content2 {
+            width: 400px;
+            height: 300px;
+            background-color: rgb(196, 251, 255)
+        }
+        .content3 {
+            width: 400px;
+            height: 300px;
+            background-color: rgb(196, 220, 255)
+        }
+
+        /* footer 디자인 */
+        footer {
+            width: 100%;
+            display: flex;
+        }
+        .footer1 {
+            width: 20%;
+            height: 100px;
+            background-color: rgb(236, 196, 255);
+        }
+        .footer2 {
+            width: 60%;
+            height: 100px;
+            background-color: rgb(255, 196, 196);
+        }
+        .footer3 {
+            width: 20%;
+            height: 100px;
+            background-color: rgb(255, 196, 255);
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <header>
+            <h1 class="logo"><a href="#">HTML5</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="#">menu</a></li>
+                    <li><a href="#">menu</a></li>
+                    <li><a href="#">menu</a></li>
+                    <li><a href="#">menu</a></li>
+                </ul>
+                <!-- 순번이 적혀있는 리스트
+                <ol>
+                    <li>menu</li>
+                    <li>menu</li>
+                    <li>menu</li>
+                    <li>menu</li>
+                </ol>
+                -->
+            </nav>
+        </header>
+        <div class="slider">
+            <img src="img/flower2.jpg" alt="꽃 사진">
+            <h2 class="text">Hello HTML5! Hello HTML5!</h2>
+        </div>
+        <div class="contents">
+            <article class="content1"></article>
+            <article class="content2"></article>
+            <article class="content3"></article>
+        </div>
+        <footer>
+            <div class="footer1"></div>
+            <div class="footer2"></div>
+            <div class="footer3"></div>
+        </footer>
+    </div>
+</body>
+</html>
